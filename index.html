@@ -1,0 +1,52 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h3>Past Chats</h3>
+      <button id="new-chat-btn" class="new-chat-btn">+ New Chat</button>
+    </div>
+    <div id="chat-history" class="chat-history">
+    </div>
+    
+    <div class="sidebar-actions">
+      <button id="rename-chat-btn" class="sidebar-action-btn" title="Rename Chat">✎</button>
+      <button id="delete-chat-btn" class="sidebar-action-btn" title="Delete Chat">🗑</button>
+    </div>
+  </div>
+  
+  <div id="main-content" class="main-content">
+    <div id="navbar" class="navbar">
+      <h2>Chatbot</h2>
+    </div>
+    <div id="chat-container">
+      <div id="messages"></div>
+    </div>
+    <div id="typing-area" class="typing-area">
+      <div class="input-wrapper">
+        <input id="type-message" type="text" required autocomplete="off" placeholder="Type a message...">
+        <button id="send" onclick="sendMessage()">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="custom-modal" class="modal">
+    <div class="modal-content">
+      <h3 id="modal-title">Rename Chat</h3>
+      <input type="text" id="modal-input" placeholder="Enter new name...">
+      <div class="modal-buttons">
+        <button id="modal-cancel" class="modal-btn cancel-btn">Cancel</button>
+        <button id="modal-confirm" class="modal-btn confirm-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
