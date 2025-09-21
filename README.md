@@ -23,3 +23,4 @@ A real-time chat application with session management built with JavaScript.
 - Backend: Node.js/Express (assumed from endpoints)
 
 ## File Structure
+<img width="251" height="311" alt="image" src="https://github.com/user-attachments/assets/69a63105-77aa-43fe-a284-2c90e3fc99b3" />
