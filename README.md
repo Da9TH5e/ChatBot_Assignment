@@ -1,4 +1,4 @@
-v# Chat Application
+# Chat Application
 
 A real-time chat application with session management built with JavaScript.
 
